@@ -25,7 +25,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.logoContainer}>
         <img
-          src="/assets/homepage/logo.png"
+          src="/src/assets/homepage/logo.png"
           className={styles.logo}
           alt="logo"
         />

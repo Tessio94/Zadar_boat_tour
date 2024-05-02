@@ -12,10 +12,10 @@ const Grid = () => {
             laudantium tempora facilis. Illum?
           </p>
         </div>
-        <img src="/assets/about/team.png" />
+        <img src="/src/assets/about/team.png" />
       </div>
       <div className={styles.gridContainer}>
-        <img src="/assets/about/team2.png" />
+        <img src="/src/assets/about/team2.png" />
         <div>
           <h1>Our Mission</h1>
           <p>
@@ -41,8 +41,8 @@ const Grid = () => {
             nesciunt tempore dignissimos nobis quaerat.
           </p>
         </div>
-        <img src="/assets/about/kornati.jpg" />
-        <img src="/assets/about/skok.jpg" />
+        <img src="/src/assets/about/kornati.jpg" />
+        <img src="/src/assets/about/skok.jpg" />
         <div>
           <h1>Join us</h1>
           <p>

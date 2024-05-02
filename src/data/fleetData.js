@@ -6,7 +6,7 @@ const data = [
     capacity: "12",
     power: "485 hp",
     price: "100€ / day tour",
-    image: "/assets/brodovi/mercan34.jpg",
+    image: "/src/assets/brodovi/mercan34.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const data = [
     capacity: "12",
     power: "400 hp",
     price: "90€ / day tour",
-    image: "/assets/brodovi/camaro1000.jpg",
+    image: "/src/assets/brodovi/camaro1000.jpg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const data = [
     fuel: "diesel",
     power: "520 hp",
     price: "120€ / day tour",
-    image: "/assets/brodovi/cobra499.jpg",
+    image: "/src/assets/brodovi/cobra499.jpg",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const data = [
     fuel: "diesel",
     power: "450 hp",
     price: "80€ / day tour",
-    image: "/assets/brodovi/saver690.jpg",
+    image: "/src/assets/brodovi/saver690.jpg",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const data = [
     fuel: "diesel",
     power: "600 hp",
     price: "150€ / day tour",
-    image: "/assets/brodovi/nautika500.jpg",
+    image: "/src/assets/brodovi/nautika500.jpg",
   },
 ];
 
