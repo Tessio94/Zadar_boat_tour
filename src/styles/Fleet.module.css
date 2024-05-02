@@ -1,0 +1,220 @@
+.fleet {
+  padding: 5rem 0;
+  margin-top: 7rem;
+  background: linear-gradient(
+    to left,
+    var(--color-text--1),
+    var(--color-light--0-trans)
+  );
+}
+
+.title {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 4rem;
+  color: var(--color-dark--0);
+}
+.title h3 {
+  font-size: 2.5rem;
+  color: var(--color-dark--2);
+}
+.title p {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color-light--2);
+}
+
+.container {
+  /* width: 85%; */
+  width: fit-content;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.boatsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.boatsContainer button {
+  color: var(--color-text--0);
+  background: rgb(245, 245, 245);
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.boatsContainer button:hover {
+  color: var(--color-text--1);
+  background-color: var(--color-light--0);
+  box-shadow: 0 10px 15px rgb(139, 139, 139);
+}
+
+.vehiclesContainer {
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.vehiclesContainer button {
+  width: 100%;
+}
+
+.images img {
+  width: 50rem;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 5px 10px 10px 0px var(--color-dark--0-trans);
+}
+
+.price {
+  background-color: var(--color-dark--2);
+  color: aliceblue;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 18rem;
+}
+
+.technicalities {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid var(--color-dark--2);
+  margin-bottom: 2rem;
+}
+
+.technicalities div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-dark--2);
+  color: var(--color-text--0);
+}
+
+.technicalities div span:first-child {
+  border-right: 2px solid var(--color-dark--2);
+}
+
+@media screen and (max-width: 992px) {
+  .images img {
+    width: 40rem;
+    height: 35rem;
+    object-fit: fill;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .images img {
+    width: 40rem;
+    height: 35rem;
+    object-fit: fill;
+  }
+
+  .vehiclesContainer {
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .boatsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .title {
+    width: 70%;
+  }
+  .boatsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+  }
+  .vehiclesContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .technicalities {
+    border: 0;
+    flex-direction: row;
+    margin-bottom: 0;
+    gap: 0;
+  }
+
+  .technicalities div {
+    gap: 1rem;
+    text-align: center;
+    border-bottom: none;
+    text-wrap: nowrap;
+  }
+
+  .technicalities div span:first-child {
+    border-right: 0px solid var(--color-dark--2);
+  }
+
+  .images img {
+    width: 100%;
+    height: 35rem;
+    object-fit: fill;
+  }
+
+  .vehiclesContainer button {
+    width: fit-content;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+
+  .price {
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    width: auto;
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  --color-text--0: #000;
+  --color-text--1: #fff;
+
+  --color-dark--0: #1310c2;
+  --color-dark--1: #0e0bb1;
+  --color-dark--2: #020068;
+  --color-light--0: #3ea8ff;
+  --color-light--1: #2790e6;
+  --color-light--2: #01639b;
+
+  --color-dark--0-trans: #1310c283;
+  --color-light--0-trans: #3ea8ff83;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,173 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  padding: 2rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.navigation ul a {
+  color: var(--color-dark-2);
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.navigation ul a:hover {
+  color: var(--color-light--0);
+}
+
+.navigation ul a::before,
+.navigation ul a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-light--0);
+  transition: all 0.5s;
+}
+
+.navigation ul a:hover::before,
+.navigation ul a:hover::after {
+  width: 100%;
+}
+
+.rightNavContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.sea {
+  z-index: 1;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hambMenu {
+  display: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.hambMenu:hover {
+  color: var(--color-light--0);
+}
+
+.sideMenu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  height: fit-content;
+  background: linear-gradient(
+    45deg,
+    var(--color-dark--0),
+    var(--color-light--0)
+  );
+  border-bottom-left-radius: 1rem;
+  padding: 3rem 2rem;
+  font-size: 2rem;
+  z-index: 110;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+
+.sideMenu ul {
+  margin-right: auto;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sideMenu ul a {
+  text-decoration: none;
+  color: var(--color-text--1);
+  transition: all 0.5s ease;
+}
+
+.sideMenu ul a:hover {
+  text-decoration: none;
+  color: var(--color-dark--2);
+}
+
+.icon {
+  margin-left: auto;
+  cursor: pointer;
+  color: var(--color-text--1);
+  transition: all 0.4s;
+}
+
+.icon:hover {
+  color: var(--color-dark--2);
+}
+
+@media screen and (max-width: 930px) {
+  .header {
+    padding: 2rem 6rem;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .header {
+    padding: 2rem 4rem;
+  }
+  .navigation ul {
+    gap: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .logo {
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* hamb menu display:block; */
+  .navigation {
+    display: none;
+  }
+
+  .hambMenu {
+    display: block;
+  }
+}

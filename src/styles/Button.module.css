@@ -1,0 +1,60 @@
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.sign_in {
+  color: var(--color-text--0);
+  background: rgb(245, 245, 245);
+  box-shadow: 0 10px 15px rgb(202, 202, 202);
+}
+
+.sign_in:hover {
+  color: var(--color-text--1);
+  background-color: var(--color-light--0);
+  box-shadow: 0 10px 15px rgb(139, 139, 139);
+}
+
+.register {
+  color: var(--color-text--1);
+  background-color: var(--color-dark--0);
+  box-shadow: 0 10px 15px var(--color-dark--0-trans);
+}
+
+.register:hover {
+  color: var(--color-text--0);
+  background-color: var(--color-light--0);
+  box-shadow: 0 10px 15px var(--color-dark--0);
+}
+
+.form {
+  color: var(--color-text--0);
+  background: rgb(245, 245, 245);
+  box-shadow: 0 10px 15px rgb(202, 202, 202);
+  height: fit-content;
+  align-self: self-end;
+  padding: 1.2rem;
+}
+
+.form:hover {
+  color: var(--color-text--1);
+  background-color: var(--color-light--0);
+  box-shadow: 0 10px 15px rgb(139, 139, 139);
+}
+
+@media screen and (max-width: 890px) {
+  .btn {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+}

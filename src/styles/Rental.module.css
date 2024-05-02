@@ -1,0 +1,98 @@
+.rental {
+  padding: 5rem 0rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container h1 {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-dark--1);
+}
+.container h3 {
+  font-size: 2.6rem;
+  color: var(--color-dark--2);
+}
+.container p {
+  font-size: 1.8rem;
+  color: var(--color-light--2);
+}
+
+.content {
+  display: flex;
+  gap: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 20rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+  .container h3 {
+    font-size: 2.3rem;
+  }
+  .container p {
+    font-size: 1.5rem;
+  }
+  .content {
+    gap: 3rem;
+  }
+  .card {
+    gap: 1.5rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    gap: 2rem;
+  }
+
+  .container h1 {
+    font-size: 3rem;
+  }
+  .container h3 {
+    font-size: 2rem;
+  }
+  .container p {
+    font-size: 1.5rem;
+  }
+  .content {
+    gap: 2rem;
+  }
+  .card {
+    gap: 1.5rem;
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .rental {
+    padding: 3rem 0rem;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  .card {
+    gap: 1.5rem;
+    width: 20rem;
+  }
+}

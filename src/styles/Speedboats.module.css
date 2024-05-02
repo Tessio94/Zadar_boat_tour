@@ -1,0 +1,165 @@
+.speedboats {
+  position: relative;
+  background: linear-gradient(
+    to left,
+    var(--color-dark--2),
+    var(--color-dark--0)
+  );
+  height: 20rem;
+}
+
+.speedboats img:first-child {
+  width: 20rem;
+  position: absolute;
+  top: 5rem;
+  left: 53%;
+  transform: rotate(-10deg);
+}
+
+.speedboats img:nth-child(2) {
+  width: 20rem;
+  position: absolute;
+  top: 5rem;
+  left: 8%;
+}
+.speedboats img:nth-child(3) {
+  width: 20rem;
+  position: absolute;
+  top: 5rem;
+  right: 8%;
+}
+.speedboats img:nth-child(4) {
+  width: 20rem;
+  position: absolute;
+  top: 5rem;
+  left: 30%;
+}
+
+@media screen and (max-width: 1068px) {
+  .speedboats img:nth-child(3) {
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .speedboats img:nth-child(2) {
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    left: 5%;
+  }
+  .speedboats img:nth-child(3) {
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .speedboats img:nth-child(2) {
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    left: 2%;
+  }
+  .speedboats img:nth-child(3) {
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    right: 2%;
+  }
+  .speedboats img:first-child {
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: rotate(-10deg);
+  }
+  .speedboats img:nth-child(4) {
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    left: 27%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .speedboats {
+    height: 15rem;
+  }
+  .speedboats img:first-child {
+    width: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .speedboats img:nth-child(2) {
+    width: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .speedboats img:nth-child(3) {
+    width: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .speedboats img:nth-child(4) {
+    width: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 628px) {
+  .speedboats {
+    height: 10rem;
+  }
+  .speedboats img:first-child {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .speedboats img:nth-child(2) {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .speedboats img:nth-child(3) {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .speedboats img:nth-child(4) {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 428px) {
+  .speedboats {
+    height: 10rem;
+  }
+  .speedboats img:first-child {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .speedboats img:nth-child(2) {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+  }
+  .speedboats img:nth-child(3) {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0%;
+  }
+  .speedboats img:nth-child(4) {
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
