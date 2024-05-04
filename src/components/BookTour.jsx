@@ -65,7 +65,7 @@ const BookTour = () => {
               </div>
               <div className={styles.rightContent}>
                 <img
-                  src={`/src/assets/brodovi/${formData.boat}.jpg`}
+                  src={`/brodovi/${formData.boat}.jpg`}
                   alt="boat"
                   className={styles.boatImg}
                 />

@@ -24,11 +24,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.logoContainer}>
-        <img
-          src="/src/assets/homepage/logo.png"
-          className={styles.logo}
-          alt="logo"
-        />
+        <img src="/homepage/logo.png" className={styles.logo} alt="logo" />
       </div>
       <div className={styles.navigation}>
         <ul>
